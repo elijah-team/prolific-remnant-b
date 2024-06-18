@@ -1,11 +1,11 @@
 package tripleo.elijah.ut;
 
+import org.apache.commons.lang3.tuple.Pair;
 import tripleo.elijah.comp.*;
-import tripleo.elijah.comp.i.*;
 
 import java.util.*;
 
-public class UT_Controller implements CompilerController {
+public class UT_Controller extends _CompilerControllerBase implements CompilerController {
 	private final UT_Root     utr;
 	List<String>    args;
 	String[]        args2;
@@ -18,13 +18,14 @@ public class UT_Controller implements CompilerController {
 
 	@Override
 	public void printUsage() {
-		System.out.println("Usage: eljc [--showtree] [-sE|O] <directory or .ez file names>");
+		// redirect to usage page or put up dreaded dialog
+		//System.out.println("Usage: eljc [--showtree] [-sE|O] <directory or .ez file names>");
 	}
 
 	@Override
 	public void processOptions() {
 		final OptionsProcessor             op  = new ApacheOptionsProcessor();
-		final CompilerInstructionsObserver cio = new CompilerInstructionsObserver(c, op, c._cis);
+		final CompilerInstructionsObserver cio = new CompilerInstructionsObserver(c, c._cis);
 		cb = new UT_CompilationBus(c, this);
 
 		try {
@@ -35,28 +36,9 @@ public class UT_Controller implements CompilerController {
 		}
 	}
 
-	@Override
-	public void runner() {
-		try {
-			c.__cr = new CompilationRunner(c, c._cis, cb, new IProgressSink() {
-				@Override
-				public void note(final int code, final ProgressSinkComponent component, final int type, final Object[] params) {
-					if (component.isPrintErr(code, type)) {
-						final String s = component.printErr(code, type, params);
-						System.err.println(s);
-					}
-				}
-			});
-			c.__cr.doFindCIs(args2, cb);
-		} catch (final Exception e) {
-			c.getErrSink().exception(e);
-			throw new RuntimeException(e);
-		}
-	}
-
-	public void _set(final Compilation aCompilation, final List<String> aArgs) {
+	public void _set(final Compilation aCompilation, final List<String> aArgumentList) {
 		c    = aCompilation;
-		args = aArgs;
+		args = aArgumentList;
 	}
 
 	public List<ICompilationBus.CB_Action> actions() {

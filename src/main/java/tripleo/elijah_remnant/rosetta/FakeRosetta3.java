@@ -2,7 +2,7 @@ package tripleo.elijah_remnant.rosetta;
 
 import org.apache.commons.lang3.tuple.Pair;
 import org.jdeferred2.DoneCallback;
-import tripleo.elijah.Eventual;
+import tripleo.elijah_fluffy.util.*;
 import tripleo.elijah.lang.OS_Module;
 import tripleo.elijah.stages.deduce.DeducePhase;
 import tripleo.elijah.stages.deduce.DeduceTypes2;

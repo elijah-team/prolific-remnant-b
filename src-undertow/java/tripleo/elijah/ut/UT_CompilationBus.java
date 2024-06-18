@@ -40,6 +40,16 @@ public class UT_CompilationBus implements ICompilationBus {
 		p.add(last);
 	}
 
+	@Override
+	public void add(final CB_Process aCBProcess, final Object aPayload) {
+		if (aCBProcess instanceof CSS2_Advisable advisable) {
+			advisable.adviseObject(aPayload);
+		} else {
+			throw new AssertionError();
+		}
+		add(aCBProcess);
+	}
+
 	public CB_Process getLast() {
 		return last;
 	}

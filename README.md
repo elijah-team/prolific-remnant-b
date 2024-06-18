@@ -28,7 +28,9 @@ mkdir prolific-remnant/COMP
 Goals
 ------
 
-- Don't know yet
+- Serve as a baseline to push back into fluffy
+ 
+- Explore how the fluffy flow works
 
 Lineage
 --------
