@@ -13,7 +13,7 @@ updates:
       interval: "weekly"
       
   - package-ecosystem: "maven" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directory: "/elijah-prolific-remnant/" # Location of package manifests
     schedule:
-      interval: "monthly"
+      interval: "weekly"
       
