@@ -3,7 +3,7 @@ Elijah prolific remnant
 
 Elijah is:
 
-- ... a high-level language suitable for replacement of* Java and C/C++.
+- ... a high-level language, think Java and C/C++.
 - ... a historical curiosity.
 - ... is meant to integrate into current C and Java projects. 
 - ... is free software intended for use on all systems, including GNU/Linux.
@@ -28,7 +28,7 @@ mkdir prolific-remnant/COMP
 Goals
 ------
 
-- Serve as a baseline to push back into fluffy
+- Explore backporting with fluffy as baseline
  
 - Explore how the fluffy flow works
 
