@@ -1,15 +1,11 @@
 name: Publish/Deploy to github packages with maven
 
 on:
-  push:
-    tags:
-      - 'r/*'
   release:
     types: [ created ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     permissions:
       contents: read
