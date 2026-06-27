@@ -2,10 +2,8 @@ name: mvn package with temurin-17
 
 on:
   workflow_dispatch:
-#  push:
-#    branches: [ "pr-mainline-k" ]
-  pull_request:
-#    branches: [ "pr-mainline-k",  "pr-fluffy-cegont" ]
+  push:
+  #pull_request:
 
 jobs:
   build:
