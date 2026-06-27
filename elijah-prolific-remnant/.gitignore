@@ -3,7 +3,10 @@
 /out/
 /target/
 /output/
-/COMP*/
-/.idea
+#/.idea
 /jcef-bundle/
-/ll.c
+/.idea/compiler.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
