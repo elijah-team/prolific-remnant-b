@@ -12,16 +12,51 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <jacoco.version>0.8.6</jacoco.version>
-        <downloadSources>true</downloadSources>
+        
         <guava.version>33.6.0-jre</guava.version>
-        <buffers.version>0.0.3</buffers.version>
-        <range.version>0.0.3b</range.version>
+        
+                  <buffers.version>0.0.3</buffers.version>
+                  <range.version>0.0.3b</range.version>
+                  <jdeferred.version>2.0.0</jdeferred.version>
+             
         <maven-site-plugin.version>3.7.1</maven-site-plugin.version>
         <maven-javadoc-plugin.version>3.0.0-M1</maven-javadoc-plugin.version>
-        <jdeferred.version>2.0.0</jdeferred.version>
-        <scala.version>2.12</scala.version>
+                 <scala.version>2.12</scala.version>
+             <!-- activej -->
     </properties>
 
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+        <!--
+        <repository>
+                    <id>gitlab-maven</id>
+                    <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
+                </repository>
+        -->
+<!--
+             use gh r-m as below
+               -->
+             
+<!--
+             also prob favor these over jitci?
+               -->
+        <repository>
+            <id>gitlab-maven-buffers</id>
+            <url>https://gitlab.com/api/v4/projects/20346374/packages/maven</url>
+        </repository>
+        <repository>
+            <id>gitlab-maven-range</id>
+            <url>https://gitlab.com/api/v4/projects/21223510/packages/maven</url>
+        </repository>
+             
+    </repositories>
+
+    <dependencyManagement>
+        
     <dependencies>
         <dependency>
             <groupId>ai.timefold.solver</groupId>
@@ -220,31 +255,7 @@
             <version>${range.version}</version>
         </dependency>
 
-    </dependencies>
-
-    <repositories>
-        <!--
-                <repository>
-                    <id>gitlab-maven</id>
-                    <url>https://gitlab.com/api/v4/projects/${env.CI_PROJECT_ID}/packages/maven</url>
-                </repository>
-        -->
-        <repository>
-            <id>gitlab-maven-buffers</id>
-            <url>https://gitlab.com/api/v4/projects/20346374/packages/maven</url>
-        </repository>
-        <repository>
-            <id>gitlab-maven-range</id>
-            <url>https://gitlab.com/api/v4/projects/21223510/packages/maven</url>
-        </repository>
-        <repository>
-            <id>central</id>
-            <url>https://repo1.maven.org/maven2/</url>
-        </repository>
-    </repositories>
-
-    <dependencyManagement>
-        <dependencies>
+    
             <dependency>
                 <groupId>ai.timefold.solver</groupId>
                 <artifactId>timefold-solver-bom</artifactId>
@@ -258,7 +269,9 @@
         <repository>
             <id>github</id>
             <name>GitHub elijah-team/fluffy-umbrella Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/elijah-team/prolific-remnant</url>
+            <url>https://maven.pkg.github.com/elijah-team/prolific-remnant</url> 
+<!-- prob the wrong name
+               -->
         </repository>
     </distributionManagement>
 
@@ -349,7 +362,9 @@
                     <execution>
                         <id>package</id>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>jar</goal> 
+<!--no-fork
+               -->
                         </goals>
                     </execution>
                 </executions>
@@ -357,6 +372,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                     <version>3.14.1</version>
                 <configuration>
                     <source>16</source>
                     <target>16</target>
