@@ -274,8 +274,6 @@
 		-->
 	</distributionManagement>
 
-	<build>
-
   <build>
     <plugins>
       <plugin>
