@@ -1,7 +1,8 @@
 package tripleo.elijah_fluffy.util;
 
-import org.jdeferred2.*;
-import org.jdeferred2.impl.*;
+import org.jdeferred2.DoneCallback;
+import org.jdeferred2.Promise;
+import org.jdeferred2.impl.DeferredObject;
 import org.jetbrains.annotations.*;
 import tripleo.elijah.diagnostic.*;
 

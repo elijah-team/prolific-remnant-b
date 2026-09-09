@@ -9,7 +9,7 @@
 
 package tripleo.elijah.lang;
 
-import antlr.*;
+import tripleo.vendor.antlr277.*;
 import org.jetbrains.annotations.*;
 import tripleo.elijah.contexts.*;
 

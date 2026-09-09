@@ -14,8 +14,8 @@
  */
 package tripleo.elijah.lang;
 
-import antlr.*;
 import tripleo.elijah.util.*;
+import tripleo.vendor.antlr277.Token;
 
 public class FloatExpression implements IExpression {
 

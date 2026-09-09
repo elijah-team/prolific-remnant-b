@@ -11,7 +11,7 @@ package tripleo.elijah.comp;
 import org.jetbrains.annotations.*;
 import tripleo.elijah.gen.*;
 import tripleo.elijah.gen.nodes.*;
-import tripleo.util.*;
+import tripleo.elijah_fluffy.util.NotImplementedException;
 import tripleo.util.buffer.*;
 
 import java.io.*;

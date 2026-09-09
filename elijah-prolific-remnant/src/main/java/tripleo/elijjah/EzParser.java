@@ -2,15 +2,15 @@
 
 package tripleo.elijjah;
 
-import antlr.*;
-import antlr.collections.impl.*;
+import tripleo.vendor.antlr277.*;
+import tripleo.vendor.antlr277.collections.impl.*;
 import tripleo.elijah.ci.IndexingStatement;
 import tripleo.elijah.ci.*;
 import tripleo.elijah.lang.*;
 import tripleo.elijah.lang.types.*;
 import tripleo.elijah.lang2.*;
 
-public class EzParser extends antlr.LLkParser implements EzTokenTypes {
+public class EzParser extends LLkParser implements EzTokenTypes {
 
 	public static final String[] _tokenNames = {
 	  "<0>",
