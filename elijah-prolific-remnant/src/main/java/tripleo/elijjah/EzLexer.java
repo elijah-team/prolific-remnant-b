@@ -2,13 +2,13 @@
 
 package tripleo.elijjah;
 
-import antlr.*;
-import antlr.collections.impl.BitSet;
+import tripleo.vendor.antlr277.*;
+import tripleo.vendor.antlr277.collections.impl.BitSet;
 
 import java.io.*;
 import java.util.*;
 
-public class EzLexer extends antlr.CharScanner implements EzTokenTypes, TokenStream {
+public class EzLexer extends CharScanner implements EzTokenTypes, TokenStream {
 	public static final BitSet _tokenSet_0 = new BitSet(mk_tokenSet_0());
 	public static final BitSet _tokenSet_1 = new BitSet(mk_tokenSet_1());
 	public static final BitSet _tokenSet_2 = new BitSet(mk_tokenSet_2());

@@ -1,6 +1,6 @@
 package tripleo.elijah.lang;
 
-import antlr.*;
+import tripleo.vendor.antlr277.*;
 
 /**
  * Created 8/30/20 2:54 PM

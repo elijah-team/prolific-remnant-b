@@ -8,8 +8,10 @@
  */
 package tripleo.elijah.lang;
 
-import antlr.*;
+//import tripleo.vendor.antlr277.*;
 
+
+import tripleo.vendor.antlr277.Token;
 
 /**
  * @author Tripleo

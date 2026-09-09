@@ -16,6 +16,7 @@ import tripleo.elijah.stages.deduce.fluffy.impl.*;
 import tripleo.elijah.testing.comp.*;
 import tripleo.elijah.util.*;
 import tripleo.elijah_fluffy.util.*;
+import tripleo.elijah_fluffy.util.NotImplementedException;
 import tripleo.elijah_remnant.startup.*;
 
 import java.util.*;
@@ -40,8 +41,6 @@ public class CompilationImpl extends Compilation {
 		if (_output_tree == null) {
 			_output_tree = new EOT_OutputTree();
 		}
-
-		assert _output_tree != null;
 
 		return _output_tree;
 	}

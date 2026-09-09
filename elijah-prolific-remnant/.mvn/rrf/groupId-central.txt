@@ -1,0 +1,10 @@
+!tripleo
+org
+com
+javax
+commons-codec
+commons-logging
+commons-lang
+net
+io
+aopalliance

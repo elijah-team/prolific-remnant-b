@@ -8,7 +8,7 @@
  */
 package tripleo.elijah.ci;
 
-import antlr.*;
+import tripleo.vendor.antlr277.*;
 import org.jetbrains.annotations.*;
 import tripleo.elijah.lang.*;
 import tripleo.elijah.util.*;

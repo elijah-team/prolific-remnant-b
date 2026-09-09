@@ -8,7 +8,7 @@
  */
 package tripleo.elijah.lang;
 
-import antlr.*;
+import tripleo.vendor.antlr277.*;
 import tripleo.elijah.diagnostic.*;
 
 import java.io.*;

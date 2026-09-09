@@ -11,7 +11,7 @@
  */
 package tripleo.elijah.lang;
 
-import antlr.*;
+import tripleo.vendor.antlr277.*;
 import tripleo.elijah.contexts.*;
 import tripleo.elijah.lang2.*;
 import tripleo.elijah.util.*;

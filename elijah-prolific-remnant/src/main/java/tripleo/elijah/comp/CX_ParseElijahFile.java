@@ -1,6 +1,6 @@
 package tripleo.elijah.comp;
 
-import antlr.*;
+import tripleo.vendor.antlr277.*;
 import tripleo.elijah.*;
 import tripleo.elijah.comp.specs.*;
 import tripleo.elijah.lang.*;

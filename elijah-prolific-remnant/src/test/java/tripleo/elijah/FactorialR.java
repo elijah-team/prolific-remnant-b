@@ -356,7 +356,7 @@ public class FactorialR /* extends TestCase */ {
 		 */
 //		@Override
 		public void transform(final ArgumentNode na, final DefaultBuffer bufbldr) {
-			bufbldr.append_s(na.getGenType(), XX.SPACE);
+			bufbldr.append_s(na.getGenType(), BufferSeparator.SPACE);
 			bufbldr.append(na.getVarName());
 		}
 	}

@@ -8,7 +8,7 @@
  */
 package tripleo.elijah.lang;
 
-import antlr.*;
+import tripleo.vendor.antlr277.*;
 import tripleo.elijah.util.*;
 
 public class StringExpression extends AbstractExpression {

@@ -2,8 +2,8 @@
 
 package tripleo.elijjah;
 
-import antlr.*;
-import antlr.collections.impl.BitSet;
+import tripleo.vendor.antlr277.*;
+import tripleo.vendor.antlr277.collections.impl.BitSet;
 import tripleo.elijah.*;
 import tripleo.elijah.contexts.*;
 import tripleo.elijah.lang.*;
@@ -14,7 +14,7 @@ import tripleo.elijah.lang2.*;
 
 import java.util.*;
 
-public class ElijjahParser extends antlr.LLkParser implements ElijjahTokenTypes {
+public class ElijjahParser extends LLkParser implements ElijjahTokenTypes {
 
 	public static final String[] _tokenNames = {
 	  "<0>",

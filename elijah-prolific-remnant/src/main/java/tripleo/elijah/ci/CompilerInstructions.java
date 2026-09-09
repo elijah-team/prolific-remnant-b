@@ -1,6 +1,6 @@
 package tripleo.elijah.ci;
 
-import antlr.*;
+import tripleo.vendor.antlr277.*;
 
 import java.util.*;
 
